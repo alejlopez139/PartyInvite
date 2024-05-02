@@ -10,12 +10,17 @@
     height: 150px;
 }
 
-body{
+body {
     background-color: black;
+    background-image: url('./Assets/khbackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cartas{
     margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #myspace{
@@ -26,3 +31,9 @@ body{
 #parent {
     display: flex;
 }
+.card{
+    color:white;
+    background-color: black;
+}
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-2/gam112.cur), auto !important;} /* End https://www.cursors-4u.com */
