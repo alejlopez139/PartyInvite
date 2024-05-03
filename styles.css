@@ -21,7 +21,6 @@
 }
 
 #rsvp .list-group-item {
-    background-color: transparent;
     color: white;
 }
 
@@ -30,8 +29,7 @@
 }
 
 body {
-    background-color: black;
-    background-image: url('./Assets/khbackground.png');
+    background-image: url('./Assets/khbackground2.png');
     background-size: cover;
     font-family: 'Cosmic Hearts', 'Times New Roman', Times, serif;
     font-weight: 500;
