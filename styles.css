@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Cosmic Hearts';
+    src: url('./Assets/Fonts/ComicHearts.otf');
+}
+
+@font-face {
+  font-family: 'Death Note';
+  src: url('./Assets/Fonts/Death\ Note.ttf');
+}
+
 #topBox {
     width: 75%;
     height: 150px;
@@ -10,13 +20,21 @@
     height: 150px;
 }
 
+#rsvp .list-group-item {
+    background-color: transparent;
+    color: white;
+}
+
+#dnote{
+  font-family: 'Death Note', 'Times New Roman', Times, serif;
+}
+
 body {
     background-color: black;
     background-image: url('./Assets/khbackground.png');
-    background-repeat: no-repeat;
     background-size: cover;
-  height: 100vh;
-  overflow: hidden;
+    font-family: 'Cosmic Hearts', 'Times New Roman', Times, serif;
+    font-weight: 500;
 }
 
 .cartas{
@@ -32,6 +50,10 @@ body {
 
 #parent {
     display: flex;
+}
+
+#overlay{
+    color:black;
 }
 .card{
     color:white;
@@ -61,20 +83,14 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-:root {
-    --glow-rgb: 239 42 201;
-  }
+
   * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.glow-point {
-  position: absolute;
-  box-shadow: 0rem 0rem 1.2rem 0.6rem rgb(var(--glow-rgb));
-  pointer-events: none;
-}
+
 
 .star {
   position: absolute;
@@ -134,6 +150,21 @@ body {
   100% {
     transform: translate(20px, 120px) rotateX(-180deg) rotateY(-90deg) scale(0.5);
     opacity: 0;
+  }
+}
+
+@media (max-width: 768px) { /* This will apply the rules only on screens smaller than 768px */
+  #parent {
+      display: flex;
+      flex-direction: column;
+  }
+
+  #myspace {
+      order: 1; /* This will make myspace appear first */
+  }
+
+  #topBox {
+      order: 2; /* This will make topBox appear second */
   }
 }
 
